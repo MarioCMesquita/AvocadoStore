@@ -1,0 +1,19 @@
+.btn {
+    height: 40px;
+    border-radius: 36px;
+    padding: 9px 60px 9px 60px;
+    border: 1px solid;
+    background: transparent;
+    font-weight: 600;
+
+    &.primary-outline {
+        border-color: #FF88B4;
+        color: #FF88B4;
+
+        &:hover {
+            background-color: #FF88B4;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
