@@ -1,0 +1,14 @@
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 50px;
+
+    .left-content {
+
+        p {
+            color: white;
+            max-width: 410px;
+        }
+    }
+}
