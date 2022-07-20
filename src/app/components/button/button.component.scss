@@ -1,3 +1,5 @@
+$colorPink: #FF88B4;
+
 .btn {
     height: 40px;
     border-radius: 36px;
@@ -5,15 +7,36 @@
     border: 1px solid;
     background: transparent;
     font-weight: 600;
+    font-family: 'nunito', 'arial', sans-serif;
 
     &.primary-outline {
-        border-color: #FF88B4;
-        color: #FF88B4;
+        border-color: $colorPink;
+        color: $colorPink;
 
         &:hover {
-            background-color: #FF88B4;
+            background-color: $colorPink;
             color: white;
             cursor: pointer;
+        }
+    }
+
+    &.primary-special {
+        border-radius: 16px;
+        border-color: $colorPink;
+        background-color: $colorPink;
+        color: white;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 2px 10px 18px;
+        align-items: center;
+        height: 42px;
+        margin-top: 50px;
+        width: 160px;
+        cursor: pointer;
+
+        div {
+            margin: 4px 0 0 24px;
         }
     }
 }

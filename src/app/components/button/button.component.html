@@ -1,1 +1,6 @@
-<button class="btn"[ngClass]="type">{{title}}</button>
+<button *ngIf="type !== 'primary-special'" class="btn" [ngClass]="type">{{title}}</button>
+
+<button *ngIf="type === 'primary-special'" class="btn" [ngClass]="type">
+    <span>{{title}}</span>
+    <div><img src="assets/arrowRight.svg" /></div>
+</button>
