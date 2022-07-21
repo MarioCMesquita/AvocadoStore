@@ -1,3 +1,4 @@
 .safe-area-view {
     padding: 60px 32px 0 32px;
+    min-height: calc(100vh - 170px); // 170px = 60px de Navbar + 60px de Footer + 50px margin top do Footer
 }

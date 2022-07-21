@@ -1,0 +1,33 @@
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 33px;
+
+    .login-card {
+        width: 350px;
+        height: 390px;
+        background-color: #FFF9EA;
+        border-radius: 16px;
+        display: flex;
+        padding: 16px;
+        flex-direction: column;
+        align-items: center;
+
+        .card-header {
+            font-size: 22px;
+            font-weight: bold;
+            color: #06352F;
+            margin-bottom: 40px;
+
+            h2 {
+                margin: 0;
+            }
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            width: 240px;
+        }
+    }
+}
