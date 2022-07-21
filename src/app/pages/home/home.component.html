@@ -10,10 +10,11 @@
     </div>
 </div>
 
-<div class="grid-products">
+<div class="grid-products" >
     <ProductCard
-    [title]="'Maionese de Abacate'"
-    [description]="'Maionese vegana feita com o extrato do abacate'"
-    [imgPath]="'assets/Maionese Abacate.webp'"
+    *ngFor="let product of productList"
+    [title]="product.name"
+    [description]="product.description"
+    [imgPath]="product.imgPath"
     ></ProductCard>
 </div>
