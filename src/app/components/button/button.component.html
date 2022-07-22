@@ -1,4 +1,4 @@
-<button *ngIf="type !== 'primary-special'" class="btn" [ngClass]="type">{{title}}</button>
+<button *ngIf="type !== 'primary-special'" class="btn" [ngClass]="type" [disabled]="disabled" >{{title}}</button>
 
 <button *ngIf="type === 'primary-special'" class="btn" [ngClass]="type">
     <span>{{title}}</span>

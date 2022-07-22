@@ -10,6 +10,7 @@ export class InputComponent implements OnInit {
   @Input() id: string = '';
   @Input() type: string = '';
   @Input() placeholder: string = '';
+  @Input() disabled: boolean = false;
 
   constructor() { }
 

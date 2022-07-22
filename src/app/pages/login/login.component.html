@@ -4,9 +4,43 @@
             <h2>Login</h2>
         </div>
         <div class="card-body">
-            <Input id="login" placeholder="E-mail" type="text" />
-            <Input class="mt-3" placeholder="Senha" id="password" type="password" />
-            <Checkbox id="keepConnected" title="Continuar conectado" ></Checkbox>
+            <Input
+                id="login"
+                placeholder="Login"
+                type="text"
+                [disabled]="isLoading"
+            />
+            <Input
+                class="mt-3"
+                id="password"
+                placeholder="Senha"
+                type="password"
+                [disabled]="isLoading"
+            />
+            <Checkbox
+                (change)="handleCheckbox($event)"
+                id="keepConnected"
+                title="Continuar conectado">
+            </Checkbox>
+            <CustomButton
+                class="mt-3"
+                title="Entrar"
+                type="primary-green"
+                [disabled]="isLoading"
+                (click)="login()">
+            </CustomButton>
+            <a class="mt-1" routerLink="">Registre-se</a>
+        </div>
+        <div class="card-footer">
+            <hr>
+            <span>
+                <p>Ou faça login com</p>
+            </span>
+            <div class="social-button">
+                <img src="assets/button_google.png" draggable="false"/>
+                <img src="assets/button_facebook.png" draggable="false"/>
+                <img src="assets/button_apple.png" draggable="false"/>
+            </div>
         </div>
     </div>
 </div>

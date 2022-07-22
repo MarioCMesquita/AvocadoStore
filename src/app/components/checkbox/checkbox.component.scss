@@ -5,12 +5,52 @@
     font-size: 14px;
     cursor: pointer;
 
+    padding-left: 22px;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
     input {
+        cursor: pointer;
+        min-width: 0;
+        opacity: 0;
+        height: 0;
+        width: 0;
+
+        &:checked ~ .checkmark {
+            background-color: #06352F;
+        }
+
+        &:checked ~ .checkmark:after {
+            display: block;
+        }
+    }
+
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 18px;
         height: 18px;
         border-radius: 4px;
-        min-width: 0;
-        margin-right: 6px;
-        cursor: pointer;
+        background-color: white;
+        border: 1px solid #06352F;
+
+        &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 5px;
+            top: 1px;
+            width: 6px;
+            height: 9px;
+            border-radius: 0px;
+            cursor: pointer;
+            border: solid white;
+            border-width: 0 2.5px 2.5px 0;
+            transform: rotate(45deg);
+        }
     }
 }

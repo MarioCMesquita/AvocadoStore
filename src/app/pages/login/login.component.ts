@@ -1,15 +1,34 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
+// Services
+import { LoginService } from '../../services/login.service'
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
 
-  constructor() { }
+  isLoading: boolean = false;
+  keepConnected: boolean = false;
+  result:any = null;
 
-  ngOnInit(): void {
+  constructor(private loginService: LoginService) { }
+
+  handleCheckbox(event: any) {
+    this.keepConnected = event.target?.checked;
+  }
+
+  async login() {
+    const login = (document.getElementById('login') as HTMLInputElement).value;
+    const password = (document.getElementById('password') as HTMLInputElement).value;
+    
+    if (login !== '' && password !== '') {
+      this.isLoading = true;
+      this.result = await this.loginService.login(login, password);
+      this.isLoading = false;
+    }
   }
 
 }
