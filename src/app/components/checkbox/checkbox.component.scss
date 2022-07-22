@@ -20,7 +20,8 @@
         width: 0;
 
         &:checked ~ .checkmark {
-            background-color: #06352F;
+            background-color: #1F9188;
+            border: 1px solid #1F9188;
         }
 
         &:checked ~ .checkmark:after {

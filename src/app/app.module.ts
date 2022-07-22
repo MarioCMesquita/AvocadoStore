@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
 // Pages
@@ -15,6 +15,10 @@ import { ProductCardComponent } from './components/product-card/product-card.com
 import { FooterComponent } from './components/footer/footer.component';
 import { InputComponent } from './components/input/input.component';
 import { CheckboxComponent } from './components/checkbox/checkbox.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+
+// Interceptor
+import { HttpGeneralInterceptor } from './httpInterceptor';
 
 @NgModule({
   declarations: [
@@ -26,14 +30,19 @@ import { CheckboxComponent } from './components/checkbox/checkbox.component';
     FooterComponent,
     LoginComponent,
     InputComponent,
-    CheckboxComponent
+    CheckboxComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [{
+    provide: HTTP_INTERCEPTORS, 
+    useClass: HttpGeneralInterceptor, 
+    multi: true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
