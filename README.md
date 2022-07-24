@@ -1,27 +1,34 @@
-# AvocadoStore
+# Projeto Avocado Store
+O objetivo deste projeto era desenvolver algo simples que tivesse algumas das funções básicas de uma aplicação, como Login e Cadastro de Usuários. O Frontend representa uma loja online fícticia com o tema "abacate". Este frontend foi desenvolvido com Angular (HTML, SCSS e Typescript) e se comunica com uma API em C# .Net Core que posteriormente se comunica com um banco de dados MSSQL. Além destas tecnologias também possui geração e autenticação de tokens JWT e a possibilidade de se gerar um Container em Docker para o deploy.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
 
-## Development server
+# Sumário
+- [Frontend](https://github.com/MarioCMesquita/AvocadoStore/edit/main/README.md#frontend)
+- [Backend](https://github.com/MarioCMesquita/AvocadoStore/edit/main/README.md#backend)
+- [Database](https://github.com/MarioCMesquita/AvocadoStore/edit/main/README.md#database)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<br><br>
+> ## Frontend:
 
-## Code scaffolding
+Para rodar o frontend é preciso ter instalado na máquina pelo menos o Node junto ao NPM, com isto, basta abrir o projeto em qualquer IDE de preferência e executar o comando "npm install" seguido por "npm start" para executar o projeto.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Na página principal é possível visualizar informações sobre o tema e também sobre alguns produtos, além de um botão "Entrar" que leva o usuário a tela de Login.
+![image](https://user-images.githubusercontent.com/62727390/180668483-0d25526f-f71f-4d79-ad0b-0291f578ac37.png)
 
-## Build
+Se você utilizar o backup do banco de dados que está na pasta [Database](Database) e estiver com a [API](API) rodando, na tela Login é possível realizar o login utilizando as credenciais **mario.casas** e **mario**.
+![image](https://user-images.githubusercontent.com/62727390/180668630-049fd714-d497-4f99-9b0c-502de49e57b6.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Após logado é exibida uma tela com a mensagem "Voce está logado!" e um botão "Sair".
+![image](https://user-images.githubusercontent.com/62727390/180668738-35a4b606-362e-4e5d-9be2-766b62e8fe21.png)
 
-## Running unit tests
+<br><br>
+> ## Backend:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+O backend foi criado a partir do Visual Studio, então é recomendado utilizar o mesmo para rodar a API. Com o projeto aberto, é necessário alterar a string de conexão com o banco de dados, no arquivo "appsettings.json" é possível alterar a ConnectionString "AvocadoStore" apontando para o seu banco local.
 
-## Running end-to-end tests
+Além dos endpoints de Login e CRUD de Usuários, também existem outros endpoints, como os de Produtos. Na pasta [Postman](Postman) tem o Environment e também a Collection AvocadoStore, que podem ser utilizados para testar todos os Endpoints existentes na API.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<br><br>
+> ## Database:
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Na pasta [Database](Database) há uma cópia do banco de dados AvocadoStore, basta realizar a restauração do mesmo no Microsoft Management Studio para rodar e utilizar o banco. 
