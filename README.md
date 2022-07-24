@@ -26,7 +26,7 @@ Após logado é exibida uma tela com a mensagem "Voce está logado!" e um botão
 
 O backend foi criado a partir do Visual Studio, então é recomendado utilizar o mesmo para rodar a API. Com o projeto aberto, é necessário alterar a string de conexão com o banco de dados, no arquivo "appsettings.json" é possível alterar a ConnectionString "AvocadoStore" apontando para o seu banco local.
 
-Além dos endpoints de Login e CRUD de Usuários, também existem outros endpoints, como os de Produtos. Na pasta [Postman](Postman) tem o Environment e também a Collection AvocadoStore, que podem ser utilizados para testar todos os Endpoints existentes na API.
+Além dos endpoints de Login e CRUD de Usuários, também existem outros endpoints, como os de Produtos. Na pasta [Postman](Postman) tem o Environment e também a Collection AvocadoStore, que podem ser importados e utilizados dentro do Postman para testar todos os Endpoints existentes na API.
 
 <br><br>
 > ## Database:
