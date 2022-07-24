@@ -3,9 +3,9 @@ O objetivo deste projeto era desenvolver algo simples que tivesse algumas das fu
 
 
 # Sumário
-- [Frontend](https://github.com/MarioCMesquita/AvocadoStore/edit/main/README.md#frontend)
-- [Backend](https://github.com/MarioCMesquita/AvocadoStore/edit/main/README.md#backend)
-- [Database](https://github.com/MarioCMesquita/AvocadoStore/edit/main/README.md#database)
+- [Frontend](https://github.com/MarioCMesquita/AvocadoStore#frontend)
+- [Backend](https://github.com/MarioCMesquita/AvocadoStore#backend)
+- [Database](https://github.com/MarioCMesquita/AvocadoStore#database)
 
 <br><br>
 > ## Frontend:
