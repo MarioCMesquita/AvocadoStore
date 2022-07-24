@@ -1,33 +1,39 @@
 .navbar {
     height: 60px;
     background: #06352F;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     padding: 0 16px 0 16px;
     position: fixed;
     width: calc(100% - 32px);
     top: 0;
 
-    .navbar-title {
-        font-family: 'nunito', 'arial', sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 33px;
-        color: white;
-        cursor: pointer;
-    }
+    span {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+        max-width: 1300px;
+        margin: auto;
 
-    .navbar-links {
-        a {
+        .navbar-title {
+            font-family: 'nunito', 'arial', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 33px;
             color: white;
-            text-decoration: none;
-            margin-right: 16px;
-
-            &:hover {
-                text-decoration: underline;
+            cursor: pointer;
+        }
+    
+        .navbar-links {
+            a {
+                color: white;
+                text-decoration: none;
+                margin-right: 16px;
+    
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }

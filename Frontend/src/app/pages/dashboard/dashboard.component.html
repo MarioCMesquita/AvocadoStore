@@ -1,1 +1,18 @@
-<p>dashboard works!</p>
+<div class="dashboard-wrapper">
+    <div class="dashboard-card">
+        <div class="card-header">
+            <h2>Dashboard</h2>
+        </div>
+        <div class="card-body">
+            <p>Voce está logado!</p>
+        </div>
+        <div class="card-footer">
+            <CustomButton
+                class="mt-3"
+                title="Sair"
+                type="danger"
+                (click)="logout()">
+            </CustomButton>
+        </div>
+    </div>
+</div>

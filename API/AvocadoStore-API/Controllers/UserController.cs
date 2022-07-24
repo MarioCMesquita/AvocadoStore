@@ -40,6 +40,7 @@ namespace AvocadoStore_API.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public ActionResult Save([FromBody] UserEntity body)
         {
             try

@@ -1,0 +1,50 @@
+.dashboard-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 33px;
+    height: 67vh;
+
+    .dashboard-card {
+        width: 350px;
+        height: 180px;
+        background-color: #FFF9EA;
+        border-radius: 16px;
+        display: flex;
+        padding: 16px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        .card-header {
+            font-size: 22px;
+            font-weight: bold;
+            color: #06352F;
+
+            h2 {
+                margin: 0;
+            }
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            width: 240px;
+
+            p {
+                color: #06352F;
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+
+        .card-footer {
+            width: calc(100% + 32px);
+            text-align: center;
+
+            ::ng-deep .btn.danger {
+                width: 240px;
+            }
+        }
+    }
+}
