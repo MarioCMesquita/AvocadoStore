@@ -1,5 +1,5 @@
 # Projeto Avocado Store
-O objetivo deste projeto era desenvolver algo simples que tivesse algumas das funções básicas de uma aplicação, como Login e Cadastro de Usuários. O Frontend representa uma loja online fícticia com o tema "abacate". Este frontend foi desenvolvido com Angular (HTML, SCSS e Typescript) e se comunica com uma API em C# .Net Core que posteriormente se comunica com um banco de dados MSSQL. Além destas tecnologias também possui geração e autenticação de tokens JWT e a possibilidade de se gerar um Container em Docker para o deploy.
+O objetivo deste projeto era desenvolver algo simples que tivesse algumas das funções básicas de uma aplicação, como Login e Cadastro de Usuários. O Frontend representa uma loja online fictícia com o tema "abacate". Este frontend foi desenvolvido com Angular (HTML, SCSS e Typescript) e se comunica com uma API em C# .Net Core que posteriormente se comunica com um banco de dados MSSQL. Além destas tecnologias também possui geração e autenticação de tokens JWT e a possibilidade de se gerar um Container em Docker para o deploy.
 
 
 # Sumário
